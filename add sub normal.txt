@@ -1,0 +1,44 @@
+8bit
+_________________
+
+
+add:
+
+.model small
+.code
+mov al,04h
+mov ah,07h
+add al,ah
+int 21h
+end
+
+sub:
+
+.model small
+.code
+mov al,14h
+mov ah,07h
+sub al,ah
+int 21h
+end
+
+mul:
+
+.model
+.code
+mov al,12h
+mov bl,16h
+mul bl
+int 21h
+end
+
+div:
+
+.model
+.code
+nov al,14h
+mov bl,07h
+div bl
+int 21h
+end
+
